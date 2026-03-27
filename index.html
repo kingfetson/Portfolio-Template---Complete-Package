@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Data Analyst & Developer">
+    <title>Your Name | Professional Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i> Your Name.
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero container" id="about">
+        <div class="hero-content">
+            <span class="section-label">Your Title Here</span>
+            <h1>Turning complex problems into <span class="highlight">elegant solutions.</span></h1>
+            <p>I'm a [Your Role] based in [Your Location], specializing in [Your Specialties]. Currently focused on building accessible, user-centered digital experiences.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <span>Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <span>Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <span>Client Satisfaction</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <!-- Replace with your photo or project screenshot -->
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profile Image">
+            <div class="badge">
+                <i class="fas fa-award"></i>
+                <div>
+                    <p>Available for Work</p>
+                    <span>Open to Opportunities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section container" id="projects">
+        <div class="section-header">
+            <span class="section-label">My Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card" 
+                data-title="Project Name 1"
+                data-desc="Write a detailed description of your project here. Explain the problem you solved, the technologies you used, and the impact it had. Keep it clear and concise."
+                data-metric1="Metric 1 (e.g., 50% Faster)"
+                data-metric2="Metric 2 (e.g., 10k Users)"
+                data-tools="React, Node.js, MongoDB"
+                data-github="https://github.com/yourusername/project-1"
+                data-live="https://your-project-live-url.com">
+                
+                <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="project-overlay">
+                        <span class="btn-sm">View Details</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-tools">
+                        <span class="tool-pill">React</span>
+                        <span class="tool-pill">Node.js</span>
+                    </div>
+                    <h3>Project Name 1</h3>
+                    <p class="project-desc">Brief description of your project and what it does.</p>
+                    <div class="project-links">
+                        <span class="link-text">View Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" 
+                data-title="Project Name 2"
+                data-desc="Write a detailed description of your project here. Explain the problem you solved, the technologies you used, and the impact it had."
+                data-metric1="Metric 1"
+                data-metric2="Metric 2"
+                data-tools="Vue.js, Firebase, Tailwind"
+                data-github="https://github.com/yourusername/project-2"
+                data-live="https://your-project-live-url.com">
+                
+                <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="project-overlay">
+                        <span class="btn-sm">View Details</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-tools">
+                        <span class="tool-pill">Vue.js</span>
+                        <span class="tool-pill">Firebase</span>
+                    </div>
+                    <h3>Project Name 2</h3>
+                    <p class="project-desc">Brief description of your project and what it does.</p>
+                    <div class="project-links">
+                        <span class="link-text">View Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" 
+                data-title="Project Name 3"
+                data-desc="Write a detailed description of your project here. Explain the problem you solved, the technologies you used, and the impact it had."
+                data-metric1="Metric 1"
+                data-metric2="Metric 2"
+                data-tools="Python, Django, PostgreSQL"
+                data-github="https://github.com/yourusername/project-3"
+                data-live="https://your-project-live-url.com">
+                
+                <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="project-overlay">
+                        <span class="btn-sm">View Details</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-tools">
+                        <span class="tool-pill">Python</span>
+                        <span class="tool-pill">Django</span>
+                    </div>
+                    <h3>Project Name 3</h3>
+                    <p class="project-desc">Brief description of your project and what it does.</p>
+                    <div class="project-links">
+                        <span class="link-text">View Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" 
+                data-title="Project Name 4"
+                data-desc="Write a detailed description of your project here. Explain the problem you solved, the technologies you used, and the impact it had."
+                data-metric1="Metric 1"
+                data-metric2="Metric 2"
+                data-tools="Next.js, TypeScript, Stripe"
+                data-github="https://github.com/yourusername/project-4"
+                data-live="https://your-project-live-url.com">
+                
+                <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="project-overlay">
+                        <span class="btn-sm">View Details</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-tools">
+                        <span class="tool-pill">Next.js</span>
+                        <span class="tool-pill">TypeScript</span>
+                    </div>
+                    <h3>Project Name 4</h3>
+                    <p class="project-desc">Brief description of your project and what it does.</p>
+                    <div class="project-links">
+                        <span class="link-text">View Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" 
+                data-title="Project Name 5"
+                data-desc="Write a detailed description of your project here. Explain the problem you solved, the technologies you used, and the impact it had."
+                data-metric1="Metric 1"
+                data-metric2="Metric 2"
+                data-tools="React Native, Firebase"
+                data-github="https://github.com/yourusername/project-5"
+                data-live="https://your-project-live-url.com">
+                
+                <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="project-overlay">
+                        <span class="btn-sm">View Details</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-tools">
+                        <span class="tool-pill">React Native</span>
+                        <span class="tool-pill">Firebase</span>
+                    </div>
+                    <h3>Project Name 5</h3>
+                    <p class="project-desc">Brief description of your project and what it does.</p>
+                    <div class="project-links">
+                        <span class="link-text">View Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card" 
+                data-title="Project Name 6"
+                data-desc="Write a detailed description of your project here. Explain the problem you solved, the technologies you used, and the impact it had."
+                data-metric1="Metric 1"
+                data-metric2="Metric 2"
+                data-tools="Vue.js, Node.js, MySQL"
+                data-github="https://github.com/yourusername/project-6"
+                data-live="https://your-project-live-url.com">
+                
+                <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="project-overlay">
+                        <span class="btn-sm">View Details</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-tools">
+                        <span class="tool-pill">Vue.js</span>
+                        <span class="tool-pill">Node.js</span>
+                    </div>
+                    <h3>Project Name 6</h3>
+                    <p class="project-desc">Brief description of your project and what it does.</p>
+                    <div class="project-links">
+                        <span class="link-text">View Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-box">
+            <h2>Let's Work Together</h2>
+            <p>I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!</p>
+            <a href="mailto:your.email@example.com" class="btn btn-light">Send Me an Email</a>
+
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2024</span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- PROJECT MODAL (POPUP) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h2 id="modal-title">Project Title</h2>
+                    <div class="modal-tools" id="modal-tools"></div>
+                </div>
+                <p id="modal-desc" class="modal-desc">Project description will appear here.</p>
+                
+                <div class="modal-metrics">
+                    <div class="metric-box">
+                        <h4 id="modal-metric1">0</h4>
+                        <p>Metric 1</p>
+                    </div>
+                    <div class="metric-box">
+                        <h4 id="modal-metric2">0</h4>
+                        <p>Metric 2</p>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="#" id="modal-github-btn" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="#" id="modal-live-btn" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
